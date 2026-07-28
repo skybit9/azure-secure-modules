@@ -1,0 +1,12 @@
+subscription_id      = "00000000-0000-0000-0000-000000000000"
+name_prefix          = "indjt"
+location             = "canadacentral"
+vnet_address_space   = ["10.20.0.0/16"]
+network_watcher_name = "NetworkWatcher_canadacentral"
+
+tags = {
+  owner               = "indrajeet.shelar"
+  cost_center         = "portfolio"
+  data_classification = "internal"
+  managed_by          = "terraform"
+}

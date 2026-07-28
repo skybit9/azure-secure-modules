@@ -1,0 +1,8 @@
+# Default owner for everything in the repository.
+*                       @skybit9
+
+# Module and policy changes carry the highest blast radius.
+/modules/               @skybit9
+/policies/              @skybit9
+/.github/workflows/     @skybit9
+/scripts/bootstrap/     @skybit9

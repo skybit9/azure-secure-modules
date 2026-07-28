@@ -1,0 +1,26 @@
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    labels: ["dependencies", "ci"]
+
+  - package-ecosystem: terraform
+    directory: "/modules/azure-network"
+    schedule:
+      interval: weekly
+    labels: ["dependencies", "terraform"]
+
+  - package-ecosystem: terraform
+    directory: "/modules/azure-observability"
+    schedule:
+      interval: weekly
+    labels: ["dependencies", "terraform"]
+
+  - package-ecosystem: terraform
+    directory: "/environments/dev"
+    schedule:
+      interval: weekly
+    labels: ["dependencies", "terraform"]

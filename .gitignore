@@ -1,0 +1,29 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+tfplan.json
+crash.log
+crash.*.log
+.terraform.lock.hcl.bak
+
+# Local variable and backend files. Never commit real values.
+*.tfvars
+*.tfvars.json
+backend.hcl
+!*.tfvars.example
+!backend.hcl.example
+
+# Tooling
+.terraform.tfstate.lock.info
+checkov.sarif
+.DS_Store
+.idea/
+.vscode/
+
+# Examples keep only their .example tfvars
+modules/**/examples/**/terraform.tfvars
+environments/**/terraform.tfvars
+environments/**/backend.hcl
